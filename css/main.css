@@ -1,0 +1,166 @@
+html {
+    font-size: 62.5%;
+}
+
+/* Navigation bar */
+
+body {
+    margin: 2em;
+    font-family: 'Poppins';
+    background-color: rgb(182, 246, 246);
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_at_top {
+    width: 25em;
+    height: auto;
+    margin-top: 0;
+}
+
+nav {
+    margin: 4em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+/* Left Column */
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+
+}
+
+.left_col {
+    width: 45%;
+    background-color: white;
+    padding: 2em;
+    
+}
+
+.right_col {
+    flex-grow: 1;
+    background-color: white;
+    padding: 1em;
+
+}
+
+h1 {
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: default;
+    margin: 0;
+}
+
+.subhead {
+    font-size: 1.8rem;
+}
+
+.tab_this {
+    padding-left: 3.5em;
+    font-size: 1.8rem;
+}
+
+.buttons {
+    margin: 5em 0;
+}
+
+.buttons, .secondary_button {
+    display: flex;
+    gap: 2em;
+}
+
+.primary_button {
+    background-color: #f1e2d1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.secondary_button {
+    background-color: hwb(247 86% 0%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+
+}
+
+/* Right Column Gallery */
+
+.right_col {
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "left right"
+    "left bottom";
+
+}
+
+.card {
+    border-radius: .8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+}
+
+.pic_1 {
+    grid-area: left;
+}
+
+.gt86_1 {
+    width: 40em;
+    height: auto;
+}
+
+.me_1_pic {
+    width: 41em;
+    height: auto;
+}
+
+.gr86_1 {
+    width: 41em;
+    height: auto;
+}
+
+
