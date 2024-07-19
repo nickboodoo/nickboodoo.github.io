@@ -114,6 +114,16 @@ h1 {
     padding: 1em 2em;
 }
 
+.notable_project_link {
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: black;
+    text-decoration: underline;
+    border-radius: 0;
+    padding: 0;
+}
+
 .secondary_button {
     background-color: hwb(247 86% 0%);
     font-size: 1.8rem;
@@ -122,8 +132,8 @@ h1 {
     text-decoration: none;
     border-radius: 1.9em;
     padding: 1em 2em;
-
 }
+
 
 /* Right Column Gallery */
 
