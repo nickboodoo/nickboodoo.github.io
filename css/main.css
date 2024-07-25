@@ -2,8 +2,6 @@ html {
     font-size: 62.5%;
 }
 
-/* Navigation bar */
-
 body {
     margin: 2em;
     font-family: 'Poppins';
@@ -15,16 +13,24 @@ body {
     margin: 0 auto;
 }
 
+.header_container {
+    background-color: white;
+    padding: 2em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2em; /* Added padding to align logo and nav links */
 }
 
 .logo_at_top {
     width: 25em;
     height: auto;
     margin-top: 0;
+    padding-left: 2em; /* Adjust this value to match the right padding of the nav */
 }
 
 nav {
@@ -55,29 +61,41 @@ nav ul li a.active:before {
     bottom: -6px;
 }
 
-/* Left Column */
+/* Main Content */
 
 main {
     display: flex;
     gap: 8em;
     margin-top: 11em;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: calc(100vh - 11em);
 }
 
 .left_col {
     width: 45%;
     background-color: white;
     padding: 2em;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .right_col {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center the items vertically */
-    align-items: center; /* Center the items horizontally */
-    gap: 2.3em;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    padding: 1em;
-    height: 100vh; /* Ensure it takes the full height of the viewport */
+    padding: 0;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 0; /* Remove padding */
+}
+
+.card_details {
+    padding: 0; /* Remove padding */
 }
 
 h1 {
@@ -96,71 +114,19 @@ h1 {
     font-size: 1.8rem;
 }
 
-.buttons {
-    margin: 5em 0;
+.tab_this li {
+    margin-bottom: 1.5em;
 }
 
-.buttons, .secondary_button {
-    display: flex;
-    gap: 2em;
+.tab_this p {
+    margin-top: 0.5em;
+    margin-left: 1em;
 }
 
-.primary_button {
-    background-color: #f1e2d1;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    border-radius: 1.9em;
-    padding: 1em 2em;
-}
-
-.notable_project_link {
-    background-color: transparent;
-    font-size: 1.8rem;
-    font-weight: normal;
-    color: black;
-    text-decoration: underline;
-    border-radius: 0;
-    padding: 0;
-}
-
-.secondary_button {
-    background-color: hwb(247 86% 0%);
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    border-radius: 1.9em;
-    padding: 1em 2em;
-}
-
-/* Right Column Gallery */
-
-.right_col {
-    display: grid;
-    gap: 2.3em;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas:
-    "left right"
-    "left bottom";
-}
-
-.card {
-    border-radius: .8em;
-    padding: 1.1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pic_1 {
-    grid-area: left;
-}
-
-.gt86_1, .me_1_pic, .gr86_1 {
+.gt86_1 {
     width: auto;
     height: 100%;
     max-height: 100%;
     max-width: 100%;
+    border: 10px solid white;
 }
