@@ -1,9 +1,11 @@
 /* portfolio.css */
 
+/* Set the base font size for the HTML document to 62.5% of the default size. This makes it easier to use rem units for sizing. */
 html {
     font-size: 62.5%;
 }
 
+/* Style the body with no margin or padding, use the 'Poppins' font, and set a light blue background color. */
 body {
     margin: 0;
     padding: 0;
@@ -12,12 +14,14 @@ body {
     padding-top: 2em; /* Add padding to ensure consistency */
 }
 
+/* Center the content and limit the width of the .portfolio-wrapper */
 .portfolio-wrapper {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-.portfolio-header {
+/* Style the top bar (header) with flexbox for horizontal alignment, white background, padding, and a box shadow. */
+.top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,15 +29,17 @@ body {
     padding: 1em 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin: 0 auto; /* Ensure the header is centered */
+    margin: 0 auto; /* Center the header */
 }
 
-.portfolio-logo {
+/* Style the logo with a specific width and auto height to maintain aspect ratio. */
+.logo {
     width: 25em;
     height: auto;
 }
 
-.portfolio-nav ul {
+/* Style the navigation list with no default list styling, flexbox for horizontal alignment, and spacing between items. */
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 4.1em;
@@ -41,7 +47,8 @@ body {
     padding: 0;
 }
 
-.portfolio-nav ul li a {
+/* Style the navigation links with no text decoration, black color, uppercase text, and relative positioning. */
+nav ul li a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -49,7 +56,8 @@ body {
     position: relative;
 }
 
-.portfolio-nav ul li a.portfolio-active:before {
+/* Add an underline to the active navigation link using a pseudo-element. */
+nav ul li a.active:before {
     position: absolute;
     content: "";
     width: 35%;
@@ -58,94 +66,35 @@ body {
     bottom: -6px;
 }
 
-/* Main Content */
-
+/* Style the main content area with flexbox for vertical alignment and centering. */
 .portfolio-main {
     display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 2em);
-    padding-top: 2em; /* Ensure consistent padding at the top */
+    justify-content: center; /* Center content horizontally */
+    margin-top: 5em; /* Adjust margin as needed */
+    min-height: calc(100vh - 2em); /* Full viewport height minus padding */
 }
 
+/* Style the main content section with flexbox for vertical alignment and spacing. */
 .portfolio-main-content {
     display: flex;
-    gap: 22em;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 1em;
-    padding-top: 2em; /* Add padding to main content */
+    flex-direction: column; /* Stack content vertically */
+    gap: 2em; /* Space between elements */
+    margin-top: 0; /* Adjust margin as needed */
+    width: 90%; /* Ensure it takes full width */
+    align-items: flex-start; /* Align content to the left */
 }
 
+/* Style the intro section with specific width, white background, padding, border, and box shadow. */
 .portfolio-intro-section {
-    width: 45%;
+    width: 100%;
     background-color: white;
     padding: 2em;
     border: 2px solid white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Keep text left-aligned */
 }
 
-.portfolio-featured-image-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(182, 246, 246);
-    padding: 0;
-    border: 0;
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    align-self: flex-start;
-    margin-top: 25em;
-    z-index: 10;
-    position: relative;
-}
-
-.portfolio-image-card {
-    background-color: rgb(182, 246, 246);
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-.portfolio-additional-images {
-    display: flex;
-    gap: 2em;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: -10em;
-    padding: 0 5em;
-}
-
-.portfolio-image-with-border {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    border: 10px solid white;
-    flex: 1;
-    transform: scale(1.1);
-}
-
-.portfolio-featured-image {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    border: 10px solid white;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-guitar-image {
-    transform: scale(0.7);
-    margin-top: 5em;
-}
-
+/* Style the main heading with a specific font size, font family, and no margin. */
 h1 {
     font-size: 5.2rem;
     font-family: 'Playfair Display';
@@ -153,20 +102,7 @@ h1 {
     margin: 0;
 }
 
+/* Style the subhead with a specific font size. */
 .portfolio-subhead {
     font-size: 1.8rem;
-}
-
-.portfolio-projects-list {
-    padding-left: 3.5em;
-    font-size: 1.8rem;
-}
-
-.portfolio-projects-list li {
-    margin-bottom: 1.5em;
-}
-
-.portfolio-projects-list p {
-    margin-top: 0.5em;
-    margin-left: 1em;
 }
