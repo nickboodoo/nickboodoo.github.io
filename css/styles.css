@@ -12,7 +12,7 @@ body, h1, h2, p, ul {
 /* Set the body font, background color, and padding */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(74,91,134,255);
+    background-color: #304366;
     padding-top: 2em;
 }
 
@@ -59,18 +59,18 @@ main {
     max-width: 1600px; /* Adjusted to accommodate 3 columns of 500px each with spacing */
     margin: 0 auto;
     padding: 2em;
-    background-color: rgba(74,91,134,255); /* Updated background color */
+    background-color: #304366; /* Updated background color */
 }
 
 /* Style the about me section */
-.about-me {
+.about-me, .project-template {
     display: flex;
-    justify-content: center; /* Center the about-me section */
+    justify-content: center; /* Center the section */
     align-items: center;
-    margin-bottom: 2em; /* Add margin below the about-me section */
+    margin-bottom: 2em; /* Add margin below the section */
 }
 
-.text-content {
+.text-content, .project-text {
     background-color: white;
     padding: 2em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added deeper shadow */
@@ -78,17 +78,17 @@ main {
     width: 80%; /* Adjusted width for better fit */
 }
 
-.text-content h2 {
+.text-content h2, .project-text h2 {
     font-size: 2.4rem;
     margin-bottom: 1em;
 }
 
-.text-content p, .text-content ul {
+.text-content p, .text-content ul, .project-text p, .project-text ul {
     font-size: 1.6rem;
     margin-bottom: 1em;
 }
 
-.text-content ul {
+.text-content ul, .project-text ul {
     list-style: disc;
     padding-left: 2em;
     text-align: left;
