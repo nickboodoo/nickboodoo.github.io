@@ -1,0 +1,84 @@
+/* Set the base font size for easier rem calculations */
+html {
+    font-size: 62.5%;
+}
+
+/* Reset margins and padding for all elements */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the body font, background color, and padding */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 2em;
+}
+
+/* Style the header with flexbox, background color, and padding */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the logo */
+.logo h1 {
+    font-size: 2.4rem;
+    color: #333;
+}
+
+/* Style the navigation list */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+/* Style the navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+/* Style the active navigation link */
+nav ul li a.active {
+    border-bottom: 2px solid #333;
+}
+
+/* Style the main content section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Style the about me section */
+.about-me {
+    text-align: center;
+}
+
+/* Style the images within the about me section */
+.about-me .images {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.about-me .images img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Style the portfolio section */
+.portfolio {
+    text-align: center;
+}
