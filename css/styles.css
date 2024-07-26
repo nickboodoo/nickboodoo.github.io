@@ -12,11 +12,11 @@ body, h1, h2, p, ul {
 /* Set the body font, background color, and padding */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #b6f6f6;
+    background-color: #304366;
     padding-top: 2em;
 }
 
-/* Style the header with flexbox, background color, and padding */
+/* Style the header with flexbox, background color, padding, and rounded corners */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,11 +25,12 @@ header {
     padding: 1em 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
+    border-radius: 15px; /* Added border radius for rounded corners */
 }
 
 /* Style the logo */
 .logo img {
-    width: 200px;
+    width: 250px; /* Adjusted width for a bigger logo */
     height: auto;
 }
 
@@ -58,7 +59,7 @@ main {
     max-width: 1600px; /* Adjusted to accommodate 3 columns of 500px each with spacing */
     margin: 0 auto;
     padding: 2em;
-    background-color: transparent;
+    background-color: #304366; /* Updated background color */
 }
 
 /* Style the about me section */
@@ -72,7 +73,8 @@ main {
 .text-content, .image-content {
     background-color: white;
     padding: 2em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added deeper shadow */
+    border-radius: 15px; /* Added border radius for rounded corners */
     width: 100%;
 }
 
