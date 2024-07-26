@@ -14,25 +14,19 @@ body {
     margin: 0 auto;
 }
 
-.header_container {
-    background-color: white;
-    padding: 1em 2em; /* Adjusted padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header {
+.top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-.logo_at_top {
+.logo {
     width: 25em;
     height: auto;
-}
-
-nav {
-    margin: 0; /* Remove margin from nav */
 }
 
 nav ul {
@@ -64,14 +58,24 @@ nav ul li a.active:before {
 
 main {
     display: flex;
-    gap: 8em;
-    margin: 2em 0; /* Adjust margin-top */
+    flex-direction: column; /* Change to column to stack elements */
+    gap: 2em;
+    margin: 0; /* Remove extra margin */
     justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items to start vertically */
-    min-height: calc(100vh - 4em); /* Adjust min-height */
+    align-items: center; /* Align items to center vertically */
+    min-height: calc(100vh - 2em); /* Adjust min-height */
 }
 
-.left_col {
+.main-content {
+    display: flex;
+    gap: 8em;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%; /* Ensure it takes the full width */
+    margin-top: 1em; /* Adjust margin-top to reduce gap */
+}
+
+.intro-section {
     width: 45%;
     background-color: white;
     padding: 2em;
@@ -79,22 +83,48 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.right_col {
+.featured-image-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 0;
-    border: 2px solid white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(182, 246, 246); /* Background color to match the site */
+    padding: 0; /* Removed padding */
+    border: 0; /* Removed border */
 }
 
-.card {
-    padding: 0; /* Remove padding */
+.image-card {
+    background-color: rgb(182, 246, 246); /* Background color to match the site */
+    padding: 0; /* Removed padding */
+    margin: 0; /* Removed margin */
+    border: none; /* Removed border */
 }
 
-.card_details {
-    padding: 0; /* Remove padding */
+.additional-images {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it takes the full width */
+    margin-top: 1em; /* Adjust margin-top to match */
+}
+
+.image-with-border {
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    border: 10px solid white;
+}
+
+.featured-image {
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    border: 10px solid white;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Added shadow directly to the image */
 }
 
 h1 {
@@ -108,24 +138,16 @@ h1 {
     font-size: 1.8rem;
 }
 
-.tab_this {
+.projects-list {
     padding-left: 3.5em;
     font-size: 1.8rem;
 }
 
-.tab_this li {
+.projects-list li {
     margin-bottom: 1.5em;
 }
 
-.tab_this p {
+.projects-list p {
     margin-top: 0.5em;
     margin-left: 1em;
-}
-
-.gt86_1 {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    border: 10px solid white;
 }
