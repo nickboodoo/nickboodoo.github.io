@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    margin: 2em;
+    margin: 0; /* Set margin to 0 for body */
+    padding: 0; /* Set padding to 0 for body */
     font-family: 'Poppins';
     background-color: rgb(182, 246, 246);
 }
@@ -15,7 +16,7 @@ body {
 
 .header_container {
     background-color: white;
-    padding: 2em 0;
+    padding: 1em 2em; /* Adjusted padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -23,18 +24,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em; /* Added padding to align logo and nav links */
 }
 
 .logo_at_top {
     width: 25em;
     height: auto;
-    margin-top: 0;
-    padding-left: 2em; /* Adjust this value to match the right padding of the nav */
 }
 
 nav {
-    margin: 4em;
+    margin: 0; /* Remove margin from nav */
 }
 
 nav ul {
@@ -42,6 +40,7 @@ nav ul {
     display: flex;
     gap: 4.1em;
     margin: 0;
+    padding: 0; /* Remove padding from ul */
 }
 
 nav ul li a {
@@ -66,10 +65,10 @@ nav ul li a.active:before {
 main {
     display: flex;
     gap: 8em;
-    margin-top: 11em;
+    margin: 2em 0; /* Adjust margin-top */
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: calc(100vh - 11em);
+    align-items: flex-start; /* Align items to start vertically */
+    min-height: calc(100vh - 4em); /* Adjust min-height */
 }
 
 .left_col {
