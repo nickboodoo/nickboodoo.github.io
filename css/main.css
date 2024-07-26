@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    margin: 0; /* Set margin to 0 for body */
-    padding: 0; /* Set padding to 0 for body */
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins';
     background-color: rgb(182, 246, 246);
 }
@@ -34,7 +34,7 @@ nav ul {
     display: flex;
     gap: 4.1em;
     margin: 0;
-    padding: 0; /* Remove padding from ul */
+    padding: 0;
 }
 
 nav ul li a {
@@ -58,12 +58,12 @@ nav ul li a.active:before {
 
 main {
     display: flex;
-    flex-direction: column; /* Change to column to stack elements */
+    flex-direction: column;
     gap: 2em;
-    margin: 0; /* Remove extra margin */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Align items to center vertically */
-    min-height: calc(100vh - 2em); /* Adjust min-height */
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 2em);
 }
 
 .main-content {
@@ -71,8 +71,8 @@ main {
     gap: 22em;
     justify-content: center;
     align-items: flex-start;
-    width: 100%; /* Ensure it takes the full width */
-    margin-top: 1em; /* Adjust margin-top to reduce gap */
+    width: 100%;
+    margin-top: 1em;
 }
 
 .intro-section {
@@ -87,31 +87,31 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 246, 246); /* Background color to match the site */
-    padding: 0; /* Removed padding */
-    border: 0; /* Removed border */
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1); /* Adjusted box-shadow to be flush with the image */
-    align-self: flex-start; /* Aligns the featured image to the top */
-    margin-top: 25em; /* Added margin to move the image down */
-    z-index: 10; /* Ensure featured image is on top */
-    position: relative; /* Required for z-index to work */
+    background-color: rgb(182, 246, 246);
+    padding: 0;
+    border: 0;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    margin-top: 25em;
+    z-index: 10;
+    position: relative;
 }
 
 .image-card {
-    background-color: rgb(182, 246, 246); /* Background color to match the site */
-    padding: 0; /* Removed padding */
-    margin: 0; /* Removed margin */
-    border: none; /* Removed border */
+    background-color: rgb(182, 246, 246);
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .additional-images {
     display: flex;
-    gap: 2em; /* Add a gap between the images */
-    justify-content: space-between; /* Evenly space images */
+    gap: 2em;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure it takes the full width */
-    margin-top: -10em; /* Adjusted margin-top to reduce gap */
-    padding: 0 5em; /* Add padding to the left and right */
+    width: 100%;
+    margin-top: -10em;
+    padding: 0 5em;
 }
 
 .image-with-border {
@@ -120,8 +120,8 @@ main {
     max-height: 100%;
     max-width: 100%;
     border: 10px solid white;
-    flex: 1; /* Ensures images take up equal space */
-    transform: scale(1.1); /* Scale up the size by 10% */
+    flex: 1;
+    transform: scale(1.1);
 }
 
 .featured-image {
@@ -130,14 +130,14 @@ main {
     max-height: 100%;
     max-width: 100%;
     border: 10px solid white;
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Added shadow directly to the image */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .guitar-image {
-    transform: scale(0.7); /* Scale the image to 70% of its original size */
-    margin-top: 5em; /* Add margin to create space from the top */
+    transform: scale(0.7);
+    margin-top: 5em;
 }
 
 h1 {
