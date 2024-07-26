@@ -68,7 +68,7 @@ main {
 
 .main-content {
     display: flex;
-    gap: 8em;
+    gap: 22em;
     justify-content: center;
     align-items: flex-start;
     width: 100%; /* Ensure it takes the full width */
@@ -90,6 +90,12 @@ main {
     background-color: rgb(182, 246, 246); /* Background color to match the site */
     padding: 0; /* Removed padding */
     border: 0; /* Removed border */
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1); /* Adjusted box-shadow to be flush with the image */
+    align-self: flex-start; /* Aligns the featured image to the top */
+    margin-top: 25em; /* Added margin to move the image down */
+    z-index: 10; /* Ensure featured image is on top */
+    position: relative; /* Required for z-index to work */
+    
 }
 
 .image-card {
@@ -101,11 +107,12 @@ main {
 
 .additional-images {
     display: flex;
-    gap: 2em;
-    justify-content: center;
+    gap: 2em; /* Add a gap between the images */
+    justify-content: space-between; /* Evenly space images */
     align-items: center;
     width: 100%; /* Ensure it takes the full width */
-    margin-top: 1em; /* Adjust margin-top to match */
+    margin-top: -10em; /* Adjusted margin-top to reduce gap */
+    padding: 0 5em; /* Add padding to the left and right */
 }
 
 .image-with-border {
@@ -114,6 +121,8 @@ main {
     max-height: 100%;
     max-width: 100%;
     border: 10px solid white;
+    flex: 1; /* Ensures images take up equal space */
+    transform: scale(1.3); /* Scale up the size by 10% */
 }
 
 .featured-image {
@@ -125,6 +134,13 @@ main {
     margin: 0; /* Ensure no margin */
     padding: 0; /* Ensure no padding */
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Added shadow directly to the image */
+    
+}
+
+.guitar-image {
+    transform: scale(0.7); /* Scale the image to 70% of its original size */
+    margin-top: 5em; /* Add margin to create space from the top */
+    border: 17px solid white;
 }
 
 h1 {
