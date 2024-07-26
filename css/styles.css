@@ -12,7 +12,7 @@ body, h1, h2, p, ul {
 /* Set the body font, background color, and padding */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #b6f6f6;
     padding-top: 2em;
 }
 
@@ -24,12 +24,13 @@ header {
     background-color: white;
     padding: 1em 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
 }
 
 /* Style the logo */
-.logo h1 {
-    font-size: 2.4rem;
-    color: #333;
+.logo img {
+    width: 200px;
+    height: auto;
 }
 
 /* Style the navigation list */
@@ -57,22 +58,40 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the about me section */
 .about-me {
     text-align: center;
+    margin-bottom: 2em;
 }
 
-/* Style the images within the about me section */
-.about-me .images {
+.about-me h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+}
+
+.about-me p {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+}
+
+.about-me ul {
+    list-style: disc;
+    padding-left: 2em;
+    text-align: left;
+}
+
+/* Style the images section */
+.images {
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin-top: 1em;
 }
 
-.about-me .images img {
+.images img {
     width: 100%;
     max-width: 200px;
     border-radius: 10px;
@@ -81,4 +100,13 @@ main {
 /* Style the portfolio section */
 .portfolio {
     text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+}
+
+.portfolio p {
+    font-size: 1.6rem;
 }
