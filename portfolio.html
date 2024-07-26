@@ -7,35 +7,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css"> <!-- Updated path -->
+    <link rel="stylesheet" href="css/portfolio.css"> <!-- Link to new CSS file -->
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="portfolio-wrapper">
+        <header class="portfolio-header">
+            <a href="#"><img class="portfolio-logo" src="images/Logo.svg" alt="Nick Boodoo Logo"></a>
 
-        <header class="header_container">
-            <a href="#"><img class="logo_at_top" src="images/Logo.svg" alt="Nick Boodoo Logo"></a> <!-- Updated path -->
-
-            <nav>
+            <nav class="portfolio-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="portfolio.html" class="portfolio-active">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
-        <main>
-            <div class="portfolio">
-                <h1>Portfolio</h1>
-                <p>Welcome to my portfolio! Here you will find a collection of my work, including projects, photography, and other creative endeavors.</p>
-                <!-- Add your portfolio items here -->
+        <main class="portfolio-main">
+            <div class="portfolio-main-content">
+                <div class="portfolio-intro-section">
+                    <h1>Software Engineer. Biologist. Photographer.</h1>
+                    <p class="portfolio-subhead">
+                        Hello! I'm Nick, a passionate programmer, photographer, and car enthusiast. I enjoy capturing moments through my lens and embarking on long drives in my favorite cars.<br /><br />
+                        I constantly juggle multiple projects, so make sure to visit often for updates!<br /><br />
+                        Here are some of my most notable current projects:
+                    </p>
+                    <ul class="portfolio-projects-list">
+                        <li>
+                            <strong>
+                                <a href="https://gdd4bff0c4623a6-testing1.adb.us-ashburn-1.oraclecloudapps.com/ords/r/sandbox/movies-watchlist/login?session=115188593268729" target="_blank" rel="noopener noreferrer">
+                                    Movies Watchlist</a>
+                            </strong>
+                            <p>Track and manage your movie watchlist.</p>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="https://gdd4bff0c4623a6-testing1.adb.us-ashburn-1.oraclecloudapps.com/ords/r/sandbox/nyc-highschools/login?session=106343423922790" target="_blank" rel="noopener noreferrer">
+                                    NYC High School Ranking</a>
+                            </strong>
+                            <p>An insightful ranking system for New York City high schools.</p>
+                        </li>
+                        <li>
+                            <strong>Python Text-Based Role Playing Game</strong>
+                            <p>Dive into an immersive, text-based RPG experience.</p>
+                        </li>
+                        <li>
+                            <strong>Park Locator App for iOS and Android</strong>
+                            <p>Find and explore parks near you with ease.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-featured-image-section">
+                    <div class="portfolio-image-card">
+                        <img class="portfolio-featured-image" src="images/gt86_pic_1.png" alt="Featured Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-additional-images">
+                <div class="portfolio-image-card">
+                    <img src="images/gr86_pic_1.png" alt="Additional Image 1" class="portfolio-image-with-border">
+                </div>
+                <div class="portfolio-image-card">
+                    <img src="images/guitar.png" alt="Guitar Image" class="portfolio-image-with-border portfolio-guitar-image">
+                </div>
+                <div class="portfolio-image-card">
+                    <img src="images/gr86_pic_2.png" alt="Additional Image 2" class="portfolio-image-with-border">
+                </div>
             </div>
         </main>
-
     </div>
     
     <!-- Link to the JavaScript file -->
-    <script src="js/main.js"></script> <!-- Updated path -->
+    <script src="js/main.js"></script>
 </body>
 </html>
