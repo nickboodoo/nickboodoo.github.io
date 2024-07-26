@@ -12,7 +12,7 @@ body, h1, h2, p, ul {
 /* Set the body font, background color, and padding */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #304366;
+    background-color: rgba(74,91,134,255);
     padding-top: 2em;
 }
 
@@ -59,23 +59,23 @@ main {
     max-width: 1600px; /* Adjusted to accommodate 3 columns of 500px each with spacing */
     margin: 0 auto;
     padding: 2em;
-    background-color: #304366; /* Updated background color */
+    background-color: rgba(74,91,134,255); /* Updated background color */
 }
 
 /* Style the about me section */
 .about-me {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2em;
+    justify-content: center; /* Center the about-me section */
+    align-items: center;
+    margin-bottom: 2em; /* Add margin below the about-me section */
 }
 
-.text-content, .image-content {
+.text-content {
     background-color: white;
     padding: 2em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added deeper shadow */
     border-radius: 15px; /* Added border radius for rounded corners */
-    width: 100%;
+    width: 80%; /* Adjusted width for better fit */
 }
 
 .text-content h2 {
@@ -94,18 +94,30 @@ main {
     text-align: left;
 }
 
-/* Style the images section */
-.image-content {
+/* Style the buttons section */
+.buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
     justify-content: center;
+    gap: 2em; /* Add space between buttons */
 }
 
-.image-content img {
-    border-radius: 10px;
-    border: 15px solid white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    color: #333;
+    background-color: rgba(242,145,181,255);
+    text-decoration: none;
+    border-radius: 15px; /* Match border radius with about me section */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Match shadow with about me section */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Max width */
+    text-align: center;
+    font-size: 1.6rem; /* Adjust font size */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
 }
 
 /* Style the gallery section */
