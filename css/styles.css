@@ -78,6 +78,27 @@ main {
     width: 80%; /* Adjusted width for better fit */
 }
 
+.project-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-left {
+    width: 70%;
+}
+
+.project-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .text-content h2, .project-text h2 {
     font-size: 2.4rem;
     margin-bottom: 1em;
